@@ -1,5 +1,11 @@
 # DH Sources
 
-This repository uses Derek Eder's [CSV to HTML Table](https://github.com/derekeder/csv-to-html-table) to publish a list of datasets and archival collections with a Rutgers connection, however interpreted. This list includes datasets associated with subscription databases, digitized archival collections, and datasets created by Rutgers researchers. It is meant to be a reference tool for [Rutgers] digital humanists looking for datasets to use in their teaching and research activities. 
+This repository is used to maintain and publish a list of datasets and archival collections with a Rutgers connection, however interpreted. Librarians and archivists participating in the Digital Humanities Working Group at Rutgers University Libraries began this list in 2017 with the ["Collections as Data"](https://collectionsasdata.github.io/statement/) framework in mind. *DH Sources* includes datasets associated with subscription databases, digitized archival collections, and datasets created by Rutgers-affiliated researchers. It is meant to serve as a reference for [Rutgers] digital humanists looking for datasets to use in their teaching and research.
 
-Website at: <https://giannetti.github.io/dh-sources/>. If you have edits or additions to make, please feel free to send a pull request or file an issue. 
+List published at <https://giannetti.github.io/dh-sources/>. If you have edits or additions to make, please feel free to send a pull request or file an issue.
+
+# Acknowledgements
+
+Thanks to the members of the Rutgers University Libraries Digital Humanities Working Group: Fengzhi Fan, Francesca Giannetti, Ron Jantz, Caryn Radick, Bob Vietrogoski, Krista White, Zara Wilkinson.
+
+This repository uses Derek Eder's [CSV to HTML Table](https://github.com/derekeder/csv-to-html-table).
