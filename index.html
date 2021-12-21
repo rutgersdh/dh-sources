@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>DH Sources</title>
-    <meta name="author" content="Derek Eder">
-    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+</head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
+<body>
     <div class="container-fluid">
+        <main class="row">
+            <div class="col">
+                <h1>Digital Humanities Source Material</h1>
+                <p>A list of collections and datasets that are (mostly) distinctive or unique to Rutgers, which may serve as excellent source material for digital humanities research or pedagogical projects.</p>
+                <p>This list was begun by the Rutgers University Libraries' Digital Humanities Working Group in 2017 with the <a href="https://collectionsasdata.github.io/statement/">"Collections as Data"</a> framework in mind. The GitHub repository for this site is available at <a href="https://github.com/rutgersdh/dh-sources">https://github.com/rutgersdh/dh-sources</a>.</p> 
+                <div id='table-container'></div>
+            </div>
+        </main>
+        <footer class="row">
+            <div class="col">
+                <hr>
+                <p class="text-right"><a href="https://github.com/derekeder/csv-to-html-table">CSV to HTML Table</a> by
+                    <a href="http://derekeder.com">Derek
+                        Eder</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/csv_to_html_table.js"></script>
 
-      <h2>Digital Humanities Source Material</h2>
-
-      <p>A list of collections and datasets that are (mostly) distinctive or unique to Rutgers, and which may serve as excellent source material for digital humanities research or pedagogical projects.</p>
-
-      <p>This list was begun by the Rutgers University Libraries' <a href="http://www.libraries.rutgers.edu/researchers/digital_humanities">Digital Humanities Working Group</a> in 2017 with the <a href="https://collectionsasdata.github.io/statement/">"Collections as Data"</a> framework in mind. The GitHub repository for this site is available at <a href="https://github.com/rutgersdh/dh-sources">https://github.com/rutgersdh/dh-sources</a>.</p> 
-
-      <div id='table-container'></div>
-
-    </div><!-- /.container -->
-
-    <footer class='footer'>
-      <div class='container-fluid'>
-        <hr />
-        <p class='pull-right'><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
-    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
-    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
-
-
-    <script type="text/javascript">
-      function format_link(link){
-        if (link)
-          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-        else
-          return "";
-      }
+    <script>
+        function format_link(link) {
+            if (link)
+                return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+            else return "";
+        }
 
       CsvToHtmlTable.init({
         csv_path: 'data/dh_sources.csv',
@@ -68,5 +55,6 @@
         custom_formatting: [[6, format_link]]
       });
     </script>
-  </body>
+</body>
+
 </html>
