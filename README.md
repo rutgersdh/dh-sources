@@ -6,7 +6,8 @@ List published at <https://rutgersdh.github.io/dh-sources/>. If you have edits o
 
 ## Vocabularies
 
-- Resource Type: <https://vocabularies.coar-repositories.org/resource_types/>
+- Resource Type: COAR <https://vocabularies.coar-repositories.org/resource_types/>
+- Subject: [DFG Classification of Scientific Disciplines, Research Areas, Review Boards, and Subject Areas](https://www.dfg.de/resource/blob/331950/85717c3edb9ea8bd453d5110849865d3/fachsystematik-2024-2028-en-data.pdf)
 
 ## Acknowledgements
 
