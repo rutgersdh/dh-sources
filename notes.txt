@@ -1,0 +1,6 @@
+add:
+
+policymap
+social explorer
+sanborn new jersey
+basically any library database that allows bulk export of data or metadata
