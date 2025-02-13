@@ -2,7 +2,7 @@
 
 ### 2025
 
-This list was recently refreshed and updated with some library sources for text and data mining (TDM). A note that most Rutgers University Libraries databases do not allow automated or bulk downloads within existing contracts. Please [contact the Libraries](mailto:ask@libraries.rutgers.edu) or the [digital humanities librarian](https://www.libraries.rutgers.edu/directory/francesca-giannetti) if a source you wish to use is *not* on this list.
+This list was recently refreshed and updated with some library sources for text and data mining (TDM). It is not considered exhaustive, merely a good starting point for any Rutgers researcher interested in computational text analysis. A note that most Rutgers University Libraries databases do not allow automated or bulk downloads within existing contracts. Please [contact the Libraries](mailto:ask@libraries.rutgers.edu) or the [digital humanities librarian](https://www.libraries.rutgers.edu/directory/francesca-giannetti) for additional help with sources for your TDM project.
 
 ### 2018
 
